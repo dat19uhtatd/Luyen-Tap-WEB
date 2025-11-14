@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main .main-header ul{
+    list-style-type: none;
+    gap:20px;
+    background-color: #2b9fed;
+    display: flex;
+    margin: 10px;
+    padding:20px;
+}
+
+#main .main-header ul li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    border-radius: 4px;
+    margin: 15px;
+    font-size:18px;
+    padding: 15px 15px;
+}
+
+#main .main-header ul li a:hover{
+    color:white;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+#main .right p{
+    text-align: right;
+    color:#2b9fed;
+    margin: 5px;
+}
+
+#main .right p:hover{
+    text-decoration: underline;
+}
+
+ #main .content .left{
+    background-color:#d4d0d0;
+    gap: 25px;
+    margin: 20px;
+    width: 340px;
+    height: 380px;
+    border-radius: 4px;
+ }
+
+ #main .content .left .section{
+    text-align: left;
+    color: rgb(42, 41, 41);
+    padding: 18px;
+    border-bottom: 1px solid #97acba;
+    padding-bottom: 15px;
+    font-size: 15px;
+ }
+
+#main .content .left .section:hover{
+    background-color: #97acba;
+    color: white;
+    padding-left: 30px;
+}
+
+.container {
+    /* background-color: red; */
+    flex: 3;
+    text-align: center;
+}
+
+.container .contact .img {
+    width: 220px;
+    height: 140px;
+    margin-right: 15px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    display: flex;
+}
+
+.container h1 {
+    /* margin-bottom: 25px; */
+    color: #97acba;
+    text-align: left;
+    padding: 15px;
+}
+
+.contact{
+    display: flex;
+    border-bottom: 1px solid #97acba;
+    padding-bottom: 15px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.img-cake {
+    width: 220px;
+}
+
+.introduce p {
+    color: #8e9599;
+}
+
+.introduce {
+    margin-left: 20px;
+}
+
+.introduce h3 {
+    margin-bottom: 5px;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 15px;
+    background-color: #2b9fed;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact .img {
+    width: 220px;
+    height: 140px;
+    margin-right: 15px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Ảnh cho contact đầu tiên (là con thứ 2 của .container) */
+.container .contact:nth-child(2) .img {
+    background-image: url("../images/banhcreeps.jpg"); /* Đã Sửa */
+}
+
+/* Ảnh cho contact thứ hai (là con thứ 3 của .container) */
+.container .contact:nth-child(3) .img {
+    background-image: url("../images/banhchuoi.jpg"); /* Đã Sửa */
+}
+
+/* Ảnh cho contact thứ ba (là con thứ 4 của .container) */
+.container .contact:nth-child(4) .img {
+    background-image: url("../images/banhkem.jpg"); /* Đã Sửa */
+}
+
+/* Ảnh cho contact thứ tư (là con thứ 5 của .container) */
+.container .contact:nth-child(5) .img {
+    background-image: url("../images/banhngon.webp"); /* Đã Sửa */
+}

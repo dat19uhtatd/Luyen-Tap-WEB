@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chania - The Beautiful City</title> <!-- ĐÃ SỬA: Tiêu đề có ý nghĩa hơn -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="left">
+                <h1>CHANIA</h1>
+            </div>
+            <div class="head-main">
+                <nav> <!-- ĐÃ SỬA: Thêm thẻ nav semantic -->
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tutorials">Tutorials</a></li>
+                        <li><a href="#about">About</a></li> <!-- ĐÃ SỬA: "Abouts" -> "About" -->
+                        <li><a href="#newsletter">Newsletter</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main> <!-- ĐÃ SỬA: Thay "boder" bằng "main" (semantic HTML) -->
+        <div class="khoi">
+            <!-- Sidebar Navigation -->
+            <aside class="container"> <!-- ĐÃ SỬA: Thêm aside cho sidebar -->
+                <div class="section">The Flight</div> <!-- ĐÃ SỬA: "Fight" -> "Flight" -->
+                <div class="section">The City</div>
+                <div class="section">The Island</div>
+                <div class="section">The Food</div>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="giua">
+                <h1>The City</h1>
+                <p>
+                    Chania is the capital of the Chania region on the island of Crete. <!-- ĐÃ SỬA: Sửa lỗi chính tả -->
+                    The city can be divided into two parts: the old town and the modern city. <!-- ĐÃ SỬA: "morden" -> "modern", thêm dấu hai chấm -->
+                </p>
+                <p>Provide contact details to get more information about the city:</p> <!-- ĐÃ SỬA: "from" -> "about", thêm dấu hai chấm -->
+
+                <!-- Contact Form -->
+                <div class="form">
+                    <div class="form-group">
+                        <label for="name">Họ và Tên:</label>
+                        <input type="text" id="name" placeholder="Nguyễn Văn A" required>
+                    </div>
+                    <div class="form-group"> <!-- ĐÃ SỬA: "form-group1" -> "form-group" để đồng nhất class -->
+                        <label for="phone">Số Điện Thoại:</label>
+                        <input type="tel" id="phone" placeholder="0123456789" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="example@email.com" required>
+                    </div>
+                    <button type="button" onclick="handleSubmit()">Gửi Thông Tin</button> <!-- ĐÃ SỬA: Thêm type="button" -->
+                </div>
+            </div>
+
+            <!-- Sidebar Info -->
+            <aside class="cuoi"> <!-- ĐÃ SỬA: Thêm aside cho sidebar -->
+                <h2>What?</h2> <!-- ĐÃ SỬA: h1 -> h2 cho phù hợp hierarchy -->
+                <p>Chania is a city on the island of Crete.</p>
+                
+                <h2>Where?</h2> <!-- ĐÃ SỬA: h1 -> h2, xóa <br> thừa -->
+                <p>Crete is a Greek island in the Mediterranean Sea.</p> <!-- ĐÃ SỬA: Sửa lại câu cho đúng nghĩa -->
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="phancuoi">
+            <p>Spring is my favorite season because of the beautiful colors and gentle breeze.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

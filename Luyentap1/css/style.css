@@ -1,0 +1,242 @@
+/* ===== RESET & GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ĐÃ SỬA: Thêm để tính toán kích thước tốt hơn */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* ĐÃ SỬA: Thêm font-family */
+    line-height: 1.6; /* ĐÃ SỬA: Thêm line-height */
+    color: #333; /* ĐÃ SỬA: Thêm màu chữ mặc định */
+}
+
+/* ===== HEADER ===== */
+.head {
+    background-color: rgb(80, 80, 237);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between; /* ĐÃ SỬA: Căn đều 2 bên */
+    align-items: center; /* ĐÃ SỬA: Căn giữa theo chiều dọc */
+    padding: 0 25px; /* ĐÃ SỬA: Thêm padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ĐÃ SỬA: Thêm shadow cho đẹp */
+}
+
+.head .left h1 {
+    margin: 15px 0; /* ĐÃ SỬA: Sửa margin cho cân đối */
+    font-size: 28px; /* ĐÃ SỬA: Tăng font size */
+}
+
+.head .head-main ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* ĐÃ SỬA: Dùng gap thay vì margin left/right */
+    margin: 0; /* ĐÃ SỬA: Xóa code trùng lặp */
+    padding: 0; /* ĐÃ SỬA: Xóa code trùng lặp */
+}
+
+.head .head-main ul li a {
+    font-size: 18px; /* ĐÃ SỬA: Giảm font size một chút */
+    color: rgb(230, 230, 230); /* ĐÃ SỬA: Màu sáng hơn để dễ đọc */
+    text-decoration: none;
+    padding: 8px 12px; /* ĐÃ SỬA: Thêm padding để dễ click */
+    border-radius: 4px; /* ĐÃ SỬA: Bo tròn góc */
+    transition: all 0.3s ease; /* ĐÃ SỬA: Thêm hiệu ứng chuyển đổi */
+}
+
+.head .head-main ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* ĐÃ SỬA: Thay đổi background thay vì chỉ màu chữ */
+    color: red; /* ĐÃ SỬA: Màu trắng thay vì đỏ */
+    transform: translateY(-2px); /* ĐÃ SỬA: Thêm hiệu ứng nâng lên */
+}
+
+/* ===== MAIN LAYOUT ===== */
+.khoi {
+    display: flex;
+    gap: 25px; /* ĐÃ SỬA: Thêm gap thống nhất */
+    max-width: 1400px; /* ĐÃ SỬA: Giới hạn chiều rộng */
+    margin: 30px auto; /* ĐÃ SỬA: Căn giữa */
+    padding: 0 20px; /* ĐÃ SỬA: Thêm padding */
+}
+
+/* ===== SIDEBAR LEFT ===== */
+.container {
+    flex-shrink: 0; /* ĐÃ SỬA: Không cho co lại */
+    width: 220px; /* ĐÃ SỬA: Tăng width một chút */
+    background: white;
+    border-radius: 8px; /* ĐÃ SỬA: Bo tròn nhiều hơn */
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ĐÃ SỬA: Shadow đẹp hơn */
+    height: fit-content; /* ĐÃ SỬA: Chiều cao vừa đủ */
+}
+
+.container .section {
+    padding: 18px 20px; /* ĐÃ SỬA: Tăng padding */
+    background-color: #5DADE2;
+    border-bottom: 2px solid white; /* ĐÃ SỬA: Giảm border */
+    color: white;
+    font-size: 17px; /* ĐÃ SỬA: Giảm font một chút */
+    font-weight: 500; /* ĐÃ SỬA: Thêm font-weight */
+    cursor: pointer; /* ĐÃ SỬA: Thêm cursor pointer */
+    transition: all 0.3s ease; /* ĐÃ SỬA: Thêm transition */
+}
+
+.container .section:hover {
+    background-color: #3498DB; /* ĐÃ SỬA: Đổi màu background thay vì màu chữ */
+    color: white; /* ĐÃ SỬA: Giữ màu trắng */
+    padding-left: 25px; /* ĐÃ SỬA: Hiệu ứng dịch sang phải */
+}
+
+.container .section:last-child {
+    border-bottom: none; /* ĐÃ SỬA: Xóa border cuối cùng */
+}
+
+/* ===== MAIN CONTENT ===== */
+.giua {
+    flex: 1; /* ĐÃ SỬA: Chiếm không gian còn lại */
+    text-align: center;
+    padding: 20px; /* ĐÃ SỬA: Thêm padding */
+}
+
+.giua h1 {
+    color: rgb(80, 80, 237);
+    margin-bottom: 20px; /* ĐÃ SỬA: Thêm margin */
+    font-size: 36px; /* ĐÃ SỬA: Tăng font size */
+}
+
+.giua p {
+    font-size: 18px; /* ĐÃ SỬA: Giảm font một chút */
+    margin-bottom: 15px; /* ĐÃ SỬA: Thêm margin */
+    color: #555; /* ĐÃ SỬA: Màu chữ nhẹ hơn */
+    max-width: 700px; /* ĐÃ SỬA: Giới hạn chiều rộng */
+    margin-left: auto; /* ĐÃ SỬA: Căn giữa */
+    margin-right: auto; /* ĐÃ SỬA: Căn giữa */
+}
+
+/* ===== FORM ===== */
+.form {
+    max-width: 500px; /* ĐÃ SỬA: Giới hạn chiều rộng */
+    margin: 30px auto; /* ĐÃ SỬA: Căn giữa và thêm margin */
+    text-align: left; /* ĐÃ SỬA: Căn trái cho form */
+    background: #f9f9f9; /* ĐÃ SỬA: Thêm background */
+    padding: 30px; /* ĐÃ SỬA: Thêm padding */
+    border-radius: 10px; /* ĐÃ SỬA: Bo tròn */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08); /* ĐÃ SỬA: Thêm shadow */
+}
+
+.form-group {
+    margin-bottom: 20px; /* ĐÃ SỬA: Thêm margin giữa các field */
+}
+
+.form-group label {
+    display: block; /* ĐÃ SỬA: Hiển thị block */
+    margin-bottom: 8px; /* ĐÃ SỬA: Khoảng cách với input */
+    font-weight: 600; /* ĐÃ SỬA: Làm đậm label */
+    color: #333; /* ĐÃ SỬA: Màu chữ */
+}
+
+.form-group input {
+    width: 100%; /* ĐÃ SỬA: Full width */
+    padding: 12px 15px; /* ĐÃ SỬA: Thêm padding */
+    border: 2px solid #ddd; /* ĐÃ SỬA: Border đẹp */
+    border-radius: 6px; /* ĐÃ SỬA: Bo tròn */
+    font-size: 16px; /* ĐÃ SỬA: Font size */
+    transition: border-color 0.3s ease; /* ĐÃ SỬA: Hiệu ứng */
+}
+
+.form-group input:focus {
+    outline: none; /* ĐÃ SỬA: Xóa outline mặc định */
+    border-color: #5DADE2; /* ĐÃ SỬA: Đổi màu border khi focus */
+}
+
+.form button {
+    width: 100%; /* ĐÃ SỬA: Full width */
+    padding: 14px; /* ĐÃ SỬA: Padding lớn hơn */
+    background-color: rgb(80, 80, 237); /* ĐÃ SỬA: Màu nền */
+    color: white; /* ĐÃ SỬA: Màu chữ */
+    border: none; /* ĐÃ SỬA: Xóa border */
+    border-radius: 6px; /* ĐÃ SỬA: Bo tròn */
+    font-size: 18px; /* ĐÃ SỬA: Font size */
+    font-weight: 600; /* ĐÃ SỬA: Làm đậm */
+    cursor: pointer; /* ĐÃ SỬA: Con trỏ pointer */
+    transition: all 0.3s ease; /* ĐÃ SỬA: Hiệu ứng */
+}
+
+.form button:hover {
+    background-color: rgb(60, 60, 200); /* ĐÃ SỬA: Màu tối hơn khi hover */
+    transform: translateY(-2px); /* ĐÃ SỬA: Nâng lên */
+    box-shadow: 0 5px 15px rgba(80, 80, 237, 0.3); /* ĐÃ SỬA: Shadow */
+}
+
+.form button:active {
+    transform: translateY(0); /* ĐÃ SỬA: Reset khi click */
+}
+
+/* ===== SIDEBAR RIGHT ===== */
+.cuoi {
+    flex-shrink: 0; /* ĐÃ SỬA: Không cho co lại */
+    width: 270px; /* ĐÃ SỬA: Tăng width */
+    background: rgb(80, 80, 237);
+    border-radius: 8px; /* ĐÃ SỬA: Bo tròn */
+    padding: 25px; /* ĐÃ SỬA: Thêm padding */
+    color: white; /* ĐÃ SỬA: Màu chữ */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* ĐÃ SỬA: Shadow */
+    height: fit-content; /* ĐÃ SỬA: Chiều cao vừa đủ */
+}
+
+.cuoi h2 {
+    font-size: 24px; /* ĐÃ SỬA: Font size */
+    margin-bottom: 12px; /* ĐÃ SỬA: Margin */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* ĐÃ SỬA: Thêm border dưới */
+    padding-bottom: 8px; /* ĐÃ SỬA: Padding */
+}
+
+.cuoi p {
+    font-size: 16px; /* ĐÃ SỬA: Font size */
+    line-height: 1.6; /* ĐÃ SỬA: Line height */
+    margin-bottom: 20px; /* ĐÃ SỬA: Margin */
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #5DADE2;
+    text-align: center;
+    padding: 25px 20px; /* ĐÃ SỬA: Padding thay vì height cố định */
+    margin-top: 50px; /* ĐÃ SỬA: Margin trên */
+}
+
+.phancuoi {
+    max-width: 1400px; /* ĐÃ SỬA: Giới hạn width */
+    margin: 0 auto; /* ĐÃ SỬA: Căn giữa */
+    color: white; /* ĐÃ SỬA: Màu chữ */
+}
+
+.phancuoi p {
+    font-size: 16px; /* ĐÃ SỬA: Font size */
+    margin: 0; /* ĐÃ SỬA: Xóa margin */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .khoi {
+        flex-wrap: wrap; /* ĐÃ SỬA: Cho phép wrap trên màn hình nhỏ */
+    }
+    
+    .container,
+    .cuoi {
+        width: 100%; /* ĐÃ SỬA: Full width trên mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column; /* ĐÃ SỬA: Xếp dọc trên mobile */
+        padding: 15px; /* ĐÃ SỬA: Giảm padding */
+    }
+    
+    .head .head-main ul {
+        flex-wrap: wrap; /* ĐÃ SỬA: Wrap menu */
+        justify-content: center; /* ĐÃ SỬA: Căn giữa */
+        gap: 10px; /* ĐÃ SỬA: Giảm gap */
+    }
+}

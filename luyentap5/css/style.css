@@ -1,0 +1,127 @@
+html{
+    font-family: Roboto, sans-serif, Indie Flower;
+}
+
+body{
+    background-color: #e2d7aa;
+}
+
+nav ul{
+    list-style-type: none;
+    gap:20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 22px;
+    padding:8px 12px;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav ul li a:hover{
+    background-color: white;
+    color: #2b9fed;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 65px;
+}
+
+.img-container{
+    text-align: center;
+    margin: 30px;
+
+}
+
+img{
+    width: 1200px;
+    height: 480px;
+}
+
+main article img{
+    Width: 350px;
+    Height: 200px;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+}
+
+article p:last-of-type span:first-of-type a::before { 
+    content: url("../images/comment.png");
+    position: relative;
+    right: 5px;
+    top: 7px;
+}
+
+.comments a, .readmore a {
+    background: url('../images/bg2.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    Padding: 10px;
+    Margin-top: 10px;
+}
+
+article {
+    /* Layout */
+    display: block;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+    color: #0a2d4a;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+
+article h2 {
+    color: #2c1810;
+    font-size: 1.8rem;
+}
+
+
+p::first-letter{
+    font-size: 40px;
+}
+
+p{
+    font-family: EucrosiaUPC, sans-serif;
+    letter-spacing: 2px;
+}
+
+
+footer{
+    font-size: 15px;
+    Margin: 0px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+
+
