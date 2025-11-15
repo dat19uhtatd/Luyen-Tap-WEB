@@ -1,4 +1,4 @@
-# 🧠 **Luyện Tập Front‑End Web**
+# **Luyện Tập Front‑End Web**
 
 Chào mừng bạn đến với kho bài tập thực hành Front‑End! 🚀 Đây là nơi bạn rèn luyện kỹ năng HTML, CSS, JavaScript thông qua các dự án và bài tập thực tế.
 
